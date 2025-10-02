@@ -1,0 +1,9 @@
+header {
+    position:static;
+    width: 100%;
+}
+
+.header-logo {
+    max-width: 185px;
+    max-height: 90px;
+}
