@@ -1,9 +1,94 @@
+body {
+    background-color: #1C2326;
+}
+
 header {
-    position:static;
+    position: sticky;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 145px;
+    background-color: white;
+}
+
+.header {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 2px solid black;
 }
 
 .header-logo {
     max-width: 185px;
     max-height: 90px;
+    padding: 10px;
 }
+
+nav a {
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 28px; 
+    color: #1C2326; 
+}
+
+.nav-icons img {
+    justify-content: ;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.nav-sites, .nav-icons, {
+    display: inline;
+}
+
+.nav-search img {
+    max-width: 50px;
+    max-height: 50px;
+    position: relative;
+}
+
+.cta-button {
+    border: 390px 50px;
+    border-style: solid;
+    border-radius: 10px;
+    size: absolute;
+    background-color: #F0C546;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 45px;
+}
+
+.cta-button a {
+    text-decoration: none;
+    color: black;
+}
+
+/*Homepage specifics*/
+
+.hero-section {
+    background-image: url(../images/quinn-aebi-XZ46vmjgFJA-unsplash.jpg);
+    background-size: cover;
+}    
+
+.homepage-content {
+    border: 1636px 460px;
+    margin-top: 142px;
+    margin-left, right: 107px;
+    padding: 50px;
+    background-image: url(../images/mounir-abdi-y43wWZCvjs0-unsplash.jpg);
+    background-size: fill;
+    background-position-x: center;
+    background-position-y: center;
+    text-align: center;
+}
+
+.homepage-content h1 {
+    font-family: "Spectral", serif;
+    font-style: italic;
+    font-size: 96px;
+    background-color: #303030c0;
+    color: white;
+    width: fit-content;
+}
+
+
+    
