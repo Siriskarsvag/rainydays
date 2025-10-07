@@ -103,9 +103,46 @@ background-color: #ffffff;
 }
 
 h1 {
-    font-family: "Spectral", 
+    font-family: "Spectral";
     font-style: italic;
     font-size: 96px;
     background-color: #303030c0;
     color: #FFFFFF;
+}
+
+h3 {
+    font-family: "Inter";
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+/*Footer style & layout*/
+ 
+footer {
+    background-color: #ffffff;
+    position: relative;
+}
+
+footer a {
+    font-family: "Inter";
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer-content {
+    display: flex;
+}
+
+.help-element {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-element {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
