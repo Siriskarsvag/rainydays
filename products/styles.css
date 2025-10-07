@@ -2,51 +2,70 @@ body {
     background-color: #1C2326;
 }
 
-header {
-    position: sticky;    
-    top: 0;
-    width: 100%;
-    height: 145px;
-    background-color: white;
-    border-bottom: 2px solid black;
+/*Header style & layout*/
+
+header{
+position: sticky;
+top: 0;
+background-color: #ffffff;
+}
+
+.header-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
 }
 
-header a img {
+.header-logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.header-logo img {
     max-width: 185px;
     max-height: auto;
-    margin: 5px;
-    padding: 5px;
-    flex: 2;
+    padding: 10px 0px;
 }
 
-nav {
-    flex: 10; 
-    margin: 10px;
-    display: flex;    
-    align-items: center;
-}
-
-nav img {
-    max-width: 50px;
-    max-height: 50px;
-}
-
-.nav-sites {
-    flex: 8;
+.nav-sites{
+    flex: 4; 
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .nav-sites a {
-    padding: 10px;
+    padding: 0 10px;
     text-decoration: none;     
     font-family: "Inter", sans-serif;
     font-size: 28px; 
     color: #1C2326;
 }
 
-.nav-icons { 
-    flex: 2;
+.nav-icons {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-icons a img {
+    max-width: 50px;
+    max-height: 50px;
+    padding: 10px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: end;
+    border: 2px solid black;
+    width: inherit;
+}
+
+.search-bar a img {
+    max-width: 44px;
+    max-height: 44px;
+    padding: 0px 10px;
 }
 
 .cta-button {
@@ -64,7 +83,7 @@ nav img {
     color: black;
 }
 
-/*Homepage specifics*/
+/*Homepage content specifics*/
 
 .hero-section {
     background-image: url(../images/quinn-aebi-XZ46vmjgFJA-unsplash.jpg);
@@ -83,13 +102,10 @@ nav img {
     text-align: center;
 }
 
-.homepage-content h1 {
+h1 {
     font-family: "Spectral", 
     font-style: italic;
     font-size: 96px;
     background-color: #303030c0;
     color: #FFFFFF;
 }
-
-
-    
