@@ -1,4 +1,5 @@
 body {
+    width: auto;
     background-color: #1C2326;
 }
 
@@ -69,13 +70,13 @@ background-color: #ffffff;
 }
 
 .cta-button {
-    border: 390px 50px;
     border-style: solid;
     border-radius: 10px;
-    size: absolute;
     background-color: #F0C546;
     font-family: "Bebas Neue", sans-serif;
     font-size: 45px;
+    padding: 0px 100px;
+    margin: 50px;
 }
 
 .cta-button a {
@@ -85,21 +86,35 @@ background-color: #ffffff;
 
 /*Homepage content specifics*/
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .hero-section {
-    background-image: url(../images/quinn-aebi-XZ46vmjgFJA-unsplash.jpg);
-    background-size: cover;
-}    
+    flex: 1;
+    height: 204px;
+    background-image: url(../images/quinn-aebi-XZ46vmjgFJA-unsplash-compressed-cut.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-section img {
+    padding: 15px 0px;
+}
 
 .homepage-content {
-    border: 1636px 460px;
-    margin-top: 142px;
-    margin-left, right: 107px;
-    padding: 50px;
-    background-image: url(../images/mounir-abdi-y43wWZCvjs0-unsplash.jpg);
-    background-size: fill;
-    background-position-x: center;
-    background-position-y: center;
-    text-align: center;
+    flex: 2.5;
+    background-image: url(../images/mounir-abdi-y43wWZCvjs0-unsplash-compressed-cut.jpg);
+    width: 1600px;
+    height: auto;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0px;
 }
 
 h1 {
