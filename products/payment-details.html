@@ -12,8 +12,14 @@
         <link href="styles.css" rel="stylesheet"/>
     </head>
     <body>
-        <header>
+<header>
             <nav class="header-container">
+                <div class= "hamburger-menu">
+                    <a href="x"><img src="../images/icons/9024721_list_light_icon.png" alt="navigation menu"/></a>
+                </div>
+                <div class= "search-icon">
+                    <a href="x"><img src="../images/icons/9024650_magnifying_glass_light_icon.png" alt="search"/></a>
+                </div>
                 <div class= "header-logo">
                     <a href="index.html"><img src="../images/RainyDays_Logo.png" alt="Rainydays logo" class=/></a>
                 </div>
@@ -33,6 +39,49 @@
                 </div>         
         </header>
         <main>
+            <section class="payment-steps">
+                <div class="step-1">
+                    <h2>E-mailaddress</h2>
+                    <h2 class="steps">1</h2>
+                    <form>
+                        <input type="email" id="email" name="email" placeholder="Insert e-mailaddress">
+                    </form>
+                    <div class="cta-blue">
+                        <p>Continue as guest</p>
+                    </div>
+                    <div class="cta-blue">
+                        <p>Sign in</p>
+                    </div>
+                </div>
+                <div class="step-2">
+                    <h2>Shipping Details</h2>
+                    <h2 class="steps">2</h2>
+                    <form class="shipping-form">
+                        <label for="firstname">First name</label>
+                        <input type="text" id="firstname" name="firstname">
+                        <label for="lastname">Last name</label>
+                        <input type="text" id="lastname" name="lastname">
+                        <label for="address">Full address</label>
+                        <input type="text" id="address" name="address">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city">
+                        <label for="postalcode">Postal code</label>
+                        <input type="number" id="postalcode" name="postalcode">
+                        <label for="country">Country</label>
+                        <input type="text" id="country" name="country">
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </form>
+                </div>
+                <div class="step-3">
+                    <h2>Payment</h2>
+                    <h2 class="steps">3</h2>
+                    <form class="payment-form">
+                        <label for="billingaddress">Billingaddress - Check to use same as shipping</label>
+                        <input type="checkbox" id="billingaddress" name="billingaddress">
+                        <label for="payment-options">Payment options</label>
+                        
+            </section>
 
         </main>
         <footer>
