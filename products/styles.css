@@ -108,12 +108,20 @@ main {
 h2 {
     font-family: "Bebas Neue";
     font-size: 24px;
+    padding: 0px;
+    margin: 0px;
 }
 
 h3 {
     font-family: "Inter";
     font-size: 15px;
     text-decoration: underline;
+}
+
+p {
+    font-family: "Inter";
+    margin: 0px;
+    padding: 0px;
 }
 
 /*Footer style & layout*/
@@ -243,8 +251,9 @@ footer a {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 55px;
+    margin: 55px;
     transition-property: display;
+    border: 2px solid black;
 }
 
 .product-card img {
@@ -257,9 +266,24 @@ footer a {
     justify-content: space-evenly;
     align-items: center;
     background-color: #C1DADC;
+    border-top: 2px solid black;
+    height: 70px;
 }
 
-.product-card-footer > img {
+.product-footer-text {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-footer-icons {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.product-footer-icons > img {
     width: 30px;
     height: 30px;
 }
@@ -269,8 +293,8 @@ footer a {
     width: 360px;
     height: 440px;
     position: absolute;
-    top: 55px;
-    left: 55px;
+    top: 0px;
+    left: 0px;
     background-color: #303030c0;
     display: flex ;
     align-items: flex-end;
@@ -293,6 +317,7 @@ footer a {
 /*media queries*/
 
 @media screen and (max-width: 600px) {
+/*Header adjustments for mobile*/
     .hamburger-menu {
         display: inline;
         flex: 1;
@@ -327,8 +352,9 @@ footer a {
     .header-logo a img {
         max-width: 130px;
         max-height: 100%;
-        
     }
+
+/*Main adjustments for mobile*/
 
     .hero-section {
         display: none;
@@ -338,17 +364,50 @@ footer a {
         font-size: 52px;
     }
 
-    main {
-        height: 550px;
-    }
-
     .homepage-content {
         height: 700px;
         width: 90%;
         margin: 30px 0px;
     }
+
     .cta-button {
         padding: 3px 40px;
     }
+
+    .product-card {
+        margin: 20px;
+    }
+
+    .product-card img {
+        width: 170px;
+        height: 207px;
+    }
+
+    .product-card-footer {
+        height: 36px;
+    }
+
+    .product-footer-text h2 {
+        font-size: 12px;
+    }
+
+    .product-footer-text p {
+        font-size: 8px;
+    }
+
+    .product-footer-icons > img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .overlay {
+        width: 170px;
+        height: 207px;
+        font-size: 15px;
+    }
+
+
+
+
 }
     
