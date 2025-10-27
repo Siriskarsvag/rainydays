@@ -40,7 +40,7 @@
         </header>
         <main>
             <section class="cart">
-                <section class="cart-overview"></section>
+                <section class="cart-overview">
                     <table class="cart-items">
                         <tr>
                             <th>CART OVERVIEW</th>
@@ -48,7 +48,11 @@
                             <th>PRIZE</th>
                         </tr>
                         <tr>
-                            <td class="product-chosen"><img src="../images/RainyDays_Jacket1.jpg" alt="Rainydays Storm guard - red and silver"/><h4>Rainydays Storm Guard</h4><p>Size: X</p></td>
+                            <td class="product-chosen"><img src="../images/RainyDays_Jacket1.jpg" alt="Rainydays Storm guard - red and silver"/>
+                                <div>
+                                    <h4>Rainydays Storm Guard</h4><p>Size: X</p>
+                                </div>
+                            </td>
                             <td class="item-quantity"><h4>-</h4><h4>1</h4><h4>+</h4><img src="../images/icons/8664938_trash_can_delete_remove_icon.png"/></td>
                             <td class="item-price"><h4>999,-</h4></td>
                         </tr>
@@ -58,17 +62,23 @@
                     </div>
                 </section>
                 <section class="cart-summary">
-                    <div class="summary-overview">
-                        <h3>SUMMARY</h3>
-                        <h3>SUBTOTAL = 999,-</h3>
-                    </div>
+                    <table class="summary-overview">
+                        <tr>
+                            <th>SUMMARY<th>
+                        </tr>
+                        <tr>
+                            <td class="item-price">SUBTOTAL = 999,-<td>
+                        </tr>
+                    </table>
                     <div class="continue-to-checkout">
-                        <forms class="discount-code">
-                            <label for="discount">Got a discount code?</label>
-                            <input type="text" id="discount" name="discount" placeholder="Insert here..." optional/>
-                            <input type="submit" value="OK" class="cta-blue"/>
-                        </forms>
-                        <h2>TOTAL 999,-</h2>
+                        <div class="total">
+                            <forms class="discount-code">
+                                <label for="discount">Got a discount code?</label>
+                                <input type="text" id="discount" name="discount" placeholder="Insert here..." optional/>
+                                <input type="submit" value="OK" class="cta-blue"/>
+                            </forms>
+                            <h2>TOTAL 999,-</h2>
+                        </div>
                         <div class="cta-button">
                             <a href="payment-details.html">CONTINUE TO CHECKOUT</a>
                         </div>
@@ -77,26 +87,46 @@
             </section>
             <section class="you-may-also-like">
                 <h2>YOU MAY ALSO LIKE...</h2>
-                <div class="product-card">
-                    <img src="../images/RainyDays_Jacket3.jpg" alt="Rainydays trail - Red and white"/>
-                    <h2>Rainydays Trail</h2>
-                    <p>999,-</p>
-                    <img src="../images/icons/9024571_heart_straight_light_icon.png" alt="like icon"/>
-                    <img src="../images/icons/9025031_tote_light_icon.png" alt="add to cart icon"/>
-                </div>
-                <div class="product-card">
-                    <img src="../images/RainyDays_Jacket2.jpg" alt="Rainydays thermic men - red and white"/>
-                    <h2>Thermic M</h2>
-                    <p>699,-</p>
-                    <img src="../images/icons/9024571_heart_straight_light_icon.png" alt="like icon"/>
-                    <img src="../images/icons/9025031_tote_light_icon.png" alt="add to cart icon"/>
-                </div>
-                <div class="product-card">
-                    <img src="../images/RainyDays_Jacket4.jpg" alt="Rainydays Northern - black and white with yellow details"/>
-                    <h2>Rainydays Northern</h2>
-                    <p>999,-</p>
-                    <img src="../images/icons/9024571_heart_straight_light_icon.png" alt="like icon"/>
-                    <img src="../images/icons/9025031_tote_light_icon.png" alt="add to cart icon"/>
+                <div class="prod-options">
+                    <div class="product-card">
+                        <img src="../images/RainyDays_Jacket3.jpg" alt="Rainydays trail - light and grey"/>
+                        <div class="product-card-footer">
+                            <div class="product-footer-text">
+                                <h3>Rainydays Trail</h3>
+                                <p>999,-</p>
+                            </div>
+                            <div class="product-footer-icons">    
+                                <img src="../images/icons/9024571_heart_straight_light_icon.png" alt="like icon"/>
+                                <img src="../images/icons/9025031_tote_light_icon.png" alt="add to cart icon"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/RainyDays_Jacket2.jpg" alt="Rainydays thermic men - red and white"/>
+                        <div class="product-card-footer">
+                            <div class="product-footer-text">
+                                <h3>Thermic M</h3>
+                                <p>699,-</p>
+                            </div>
+                            <div class="product-footer-icons">
+                                <img src="../images/icons/9024571_heart_straight_light_icon.png" alt="like icon"/>
+                                <img src="../images/icons/9025031_tote_light_icon.png" alt="add to cart icon"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/RainyDays_Jacket4.jpg" alt="Rainydays Northern - black and white with yellow details"/>
+                        <div class="product-card-footer">
+                            <div class="product-footer-text">
+                                <h3>Rainydays Northern</h3>
+                                <p>999,-</p>
+                            </div>
+                            <div class="product-footer-icons">   
+                                <img src="../images/icons/9024571_heart_straight_light_icon.png" alt="like icon"/>
+                                <img src="../images/icons/9025031_tote_light_icon.png" alt="add to cart icon"/>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
