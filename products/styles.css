@@ -85,7 +85,7 @@ background-color: #ffffff;
     background-color: #F0C546;
     font-family: "Bebas Neue", sans-serif;
     font-size: 45px;
-    padding: 0px 100px;
+    padding: 0px 50px;
     margin: 10px;
     width: fit-content;
 }
@@ -95,6 +95,11 @@ background-color: #ffffff;
     color: black;
     text-align: center;
     text-wrap: nowrap;
+}
+
+.cta-button img {
+    width: 30px;
+    height: 30px;
 }
 
 /*Main style & layout*/
@@ -125,6 +130,7 @@ h4 {
     font-family: "Inter";
     font-size: 15px;
     text-decoration: underline;
+    margin: 0px;
 }
 
 h5 {
@@ -330,7 +336,7 @@ footer a {
 }
 
 .product-card:hover .overlay{
-    opacity: 0.5;
+    opacity: 1;
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
 }
@@ -424,6 +430,7 @@ footer a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 .cart-items {
@@ -434,7 +441,7 @@ th {
     flex: 1;
     height: 90px;
     font-family: "Bebas Neue";
-    font-size: 30px;
+    font-size: 22px;
 }
 
 tr {
@@ -450,11 +457,17 @@ td {
     flex: 1;
     display: flex;
     border: solid 2px black;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .product-chosen > img {
     width: 75px; 
     height: auto;
+}
+
+.product-chosen > p {
+    border: solid 2px black;
 }
 
 .item-quantity {
@@ -480,11 +493,12 @@ td {
 
 .cta-blue {
     border-radius: 10px;
+    border: solid 2px black;
     background-color: #0A3641;
     color: #FFFFFF;
     font-family: "Bebas Neue", sans-serif;
     font-size: 45px;
-    padding: 0px 100px;
+    padding: 0px 50px;
     margin: 10px;
     width: fit-content;
 }
@@ -505,19 +519,20 @@ td {
 }
 
 .summary-overview {
-    flex: 5;
+    flex: 2;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: flex-end;
+    justify-content: space-between;
     border: solid 2px black;
 }
 
 .continue-to-checkout {
-    flex: 1;
+    flex: 2;
     border: solid 2px black;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .total {
@@ -545,6 +560,126 @@ td {
 .prod-options {
     display: flex;
 }
+
+/*Payment details*/
+
+.payment {
+    display: flex;
+    flex-direction: row;
+    padding: 100px 30px;
+    height: fit-content;
+}
+
+.payment-steps {
+    flex: 1;
+    border: solid 2px black;
+    background-color: #FFFFFF;
+}
+
+.step-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.steps {
+    background-color: #0A3641;
+    width: 40px;
+    height: 40px;
+    font-family: "Inter";
+    font-size: 28px;
+    color: #FFFFFF;
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px;
+}
+
+.step-section {
+   display: flex; 
+   flex-direction: column; 
+   padding: 5px 20px;
+}
+
+.email input {
+   width: 100%;
+   height: 45px;
+}
+
+.mail-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mail-buttons > .cta-blue {
+    font-family: "Inter";
+    font-size: 28px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.shipping-form input {
+    width: 100%;
+    height: 20px;
+}
+
+.billing {
+    display: flex;
+}
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+}
+
+label img {
+    width: 25px;
+    height: 15px;
+}
+
+.shipping-options {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: solid 2px black;
+    background-color: #FFFFFF;
+}
+
+.shipping-methods {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 10px;
+    justify-content: space-between;
+}
+
+.order-overview {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    border: solid 2px black;
+    background-color: #FFFFFF;
+}
+
+.summary {
+    flex: 2;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    border: solid 2px black;
+}
+
+.checkout {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+
+
 
 /*media queries*/
 
@@ -603,6 +738,12 @@ td {
     }
 
     .cta-button {
+        font-size: 30px;
+        padding: 3px 40px;
+    }
+
+    .cta-blue {
+        font-size: 30px;
         padding: 3px 40px;
     }
 
@@ -668,6 +809,8 @@ td {
 
 .cart {
     flex-direction: column;
+    padding: 0px;
+    margin: 30px 20px;
 }
 
 h4 {
@@ -675,7 +818,20 @@ h4 {
 }
 
 p {
-    font-size: 10px;
+    font-size: 14px;
+}
+
+/*payment details*/
+
+.payment {
+    flex-direction: column;
+    margin: 30px 20px;
+    padding: 0px;
+}
+
+.mail-buttons > .cta-blue {
+    font-size: 20px;
+    padding: 10px 20px;
 }
 
 }
