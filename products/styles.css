@@ -80,7 +80,7 @@ background-color: #ffffff;
 }
 
 .cta-button {
-    border-style: solid;
+    border: solid 2px black;
     border-radius: 10px;
     background-color: #F0C546;
     font-family: "Bebas Neue", sans-serif;
@@ -611,7 +611,6 @@ td {
 }
 
 .mail-buttons > .cta-blue {
-    font-family: "Inter";
     font-size: 28px;
     padding: 10px 20px;
     text-align: center;
@@ -679,7 +678,28 @@ label img {
     padding: 5px 20px;
 }
 
+/*confirmation page*/
 
+.confirmation-section {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 30px;
+    color: #FFFFFF;
+    align-items: center;
+}
+
+.confirmation-section img {
+    width: 180px;
+    height: 180px;
+}
+
+.coming-soon-section {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 30px;
+    color: #FFFFFF;
+    align-items: center;
+}
 
 /*media queries*/
 
