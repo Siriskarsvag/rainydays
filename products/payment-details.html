@@ -14,14 +14,13 @@
     <body>
         <header>
             <nav class="header-container">
-                <div class= "hamburger-menu">
-                    <a href="coming-soon.html"><img src="../images/icons/9024721_list_light_icon.png" alt="navigation menu"/></a>
-                </div>
+                <input type="checkbox" id="menu-checkbox"/>
+                <label for="menu-checkbox"> <img src="../images/icons/9024721_list_light_icon.png" alt="navigation menu"/> </label>
                 <div class= "search-icon">
                     <a href="coming-soon.html"><img src="../images/icons/9024650_magnifying_glass_light_icon.png" alt="search"/></a>
                 </div>
                 <div class= "header-logo">
-                    <a href="index.html"><img src="../images/RainyDays_Logo.png" alt="Rainydays logo" class=/></a>
+                    <a href="index.html"><img src="../images/RainyDays_Logo.png" alt="Rainydays logo"/></a>
                 </div>
                 <div class="nav-sites">
                     <a href="product-page.html">MENS</a>
@@ -34,9 +33,9 @@
                     <a href="cart.html"><img src="../images/icons/9025031_tote_light_icon.png" alt="profile icon"/></a>
                 </div>
             </nav>   
-                <div class="search-bar">
-                    <a href="coming-soon.html"><img src="../images/icons/9024650_magnifying_glass_light_icon.png" alt="search"/></a>
-                </div>         
+            <div class="search-bar">
+                <a href="coming-soon.html"><img src="../images/icons/9024650_magnifying_glass_light_icon.png" alt="search"/></a>
+            </div>         
         </header>
         <main>
             <section class="payment">
@@ -90,7 +89,7 @@
                         <form>
                             <fieldset class="payment-options">
                                 <legend>Payment Options</legend>
-                                <label for="creditcard"><input type="radio" id="creditcard" name="creditcard"> <img src="../images/icons/10131970_creditcard_line_icon.png"/>Creditcard </label>
+                                <label for="creditcard"><input type="radio" id="creditcard" name="payment-option"> <img src="../images/icons/10131970_creditcard_line_icon.png"/>Creditcard </label>
                                     <form>
                                         <fieldset class="card-details">
                                             <legend>Card details</legend>
@@ -104,9 +103,9 @@
                                             <input type="number" id="cvc" name="cvc" placeholder="000"></br>
                                         </fieldset>
                                     </form>
-                                <label for="paypal"><input type="radio" id="paypal" name="paypal"><img src="../images/icons/5340264_pay_payment_paypal_icon.png"/>Paypal </label>
-                                <label for="googlepay"><input type="radio" id="googlepay" name="googlepay"><img src="../images/icons/4691404_googlepay_icon.png"/>Google Pay  </label>
-                                <label for="giftcard"><input type="radio" id="giftcard" name="giftcard"><img src="../images/icons/9133486_giftcard_icon.png"/>Gift Card </label>
+                                <label for="paypal"><input type="radio" id="paypal" name="payment-option"><img src="../images/icons/5340264_pay_payment_paypal_icon.png"/>Paypal </label>
+                                <label for="googlepay"><input type="radio" id="googlepay" name="payment-option"><img src="../images/icons/4691404_googlepay_icon.png"/>Google Pay  </label>
+                                <label for="giftcard"><input type="radio" id="giftcard" name="payment-option"><img src="../images/icons/9133486_giftcard_icon.png"/>Gift Card </label>
                             </fieldset>
                         </form>
                     </div>
@@ -117,15 +116,15 @@
                         </div>
                         <div class="shipping-methods">
                             <form>
-                                <label for="standard"><input type="radio" id="standard" name="standard"><h3>Standard shipping</h3><p>Estimated delivery 3-5 days</p></label>
+                                <fieldset>
+                                    <label for="standard"><input type="radio" id="standard" name="shipping-option"><h3>Standard shipping</h3><p>Estimated delivery 3-5 days</p></label>
+                                    <h3>FREE</h3>
+                                </fieldset>
+                                <fieldset>
+                                    <label for="express"><input type="radio" id="express" name="shipping-option"><h3>Express shipping</h3><p>Estimated delivery 1-3 days</p></label>
+                                    <h3>+ 49,-</h3>
+                                </fieldset>
                             </form>
-                            <h3>FREE</h3>
-                        </div>
-                        <div class="shipping-methods">
-                            <form>
-                                <label for="express"><input type="radio" id="express" name="express"><h3>Express shipping</h3><p>Estimated delivery 1-3 days</p></label>
-                            </form>
-                            <h3>+ 49,-</h3>
                         </div>
                     </div>
                 </section>

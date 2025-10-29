@@ -24,8 +24,14 @@ background-color: #ffffff;
     display: none;
 }
 
-.hamburger-menu {
+.header-container input, 
+.header-container label {
     display: none;
+}
+
+.header-container label img {
+    width: 30px;
+    height: auto;
 }
 
 .header-container a img {
@@ -630,7 +636,7 @@ td {
     flex-direction: column;
 }
 
-label img {
+.payment-options label img {
     width: 25px;
     height: 15px;
 }
@@ -705,13 +711,35 @@ label img {
 
 @media screen and (max-width: 600px) {
 /*Header adjustments for mobile*/
-    .hamburger-menu {
-        display: inline;
+    .header-container input, .header-container label{
+        display: flex;
         flex: 1;
+        padding-left: 10px;
+    }
+
+    #menu-checkbox {
+        display: none;
     }
 
     .nav-sites {
         display: none;
+        position: absolute;
+        top: 110px;
+        background-color: #FFFFFF;
+        padding: 10px 5px;
+        border-radius: 10px;
+        border: solid 2px black
+    }
+
+    .nav-sites a {
+        font-size: 16px;
+        text-decoration: underline;
+        padding: 5px 0px;
+    }
+
+    #menu-checkbox:checked ~ .nav-sites {
+        display: flex;
+        flex-direction: column;
     }
 
     .search-bar {
@@ -719,16 +747,12 @@ label img {
     }
 
     .search-icon {
-        display: inline;
+        display: flex;
         flex: 1;
     }
 
     .header-logo {
         flex: 3;
-    }
-
-    .header-container {
-        padding: 5px 0px;
     }
 
     .header-container a img {
