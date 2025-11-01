@@ -268,7 +268,7 @@ body {
         flex: 1;
         width: 100%;
         height: auto;
-        background-image: url(../images/quinn-aebi-XZ46vmjgFJA-unsplash-compressed-cut.jpg);
+        background-image: url(images/quinn-aebi-XZ46vmjgFJA-unsplash-compressed-cut.jpg);
         background-repeat: no-repeat;
         display: flex;
         justify-content: center;
@@ -281,7 +281,7 @@ body {
     .homepage-content {
         width: 90%;
         height: 400px;
-        background: url(../images/mounir-abdi-y43wWZCvjs0-unsplash-compressed-cut.jpg) center no-repeat;
+        background: url(images/mounir-abdi-y43wWZCvjs0-unsplash-compressed-cut.jpg) center no-repeat;
         background-size: cover;
         display: flex;
         flex-direction: column;
@@ -788,7 +788,7 @@ body {
     .homepage-content {
         height: 650px;
         width: 90%;
-        background-image: url(../images/mounir-abdi-y43wWZCvjs0-unsplash-compressed_small.jpg);
+        background-image: url(images/mounir-abdi-y43wWZCvjs0-unsplash-compressed_small.jpg);
     }
 /*components adjustment*/
     .cta-button {
