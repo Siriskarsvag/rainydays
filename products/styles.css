@@ -99,6 +99,8 @@ body {
         font-size: 5em;
         padding: 0px 15px;
         margin: 0px;
+        color: #FFFFFF;
+        text-align: center;
     }
 
     h2 {
@@ -290,10 +292,14 @@ body {
 
     .homepage-content > h1 {
         background-color: #303030c0;
-        color: #FFFFFF;
-        text-align: center;
     }
 /*Product page*/
+    .product-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .product-section {
         display: flex;
         flex-direction: row;
@@ -365,6 +371,10 @@ body {
         transition-timing-function: ease-in-out;
     }
 /*Product Detail Page*/
+    .product-detail-page {
+        display: flex;
+        flex-direction: column;
+    }
     .product-detail-section {
         display: flex;
         flex-direction: row;
@@ -750,6 +760,10 @@ body {
         max-height: 100%;
     }
 /*Main adjustments*/
+    h1 {
+        font-size: 40px;
+    }
+
     h2 {
         font-size: 35px;
     }
@@ -819,49 +833,49 @@ body {
         margin: 30px 15px;
     }
 /*Product Detail Page adjustments for mobile*/
-.product-detail-section {
-    flex-direction: column;
-}  
+    .product-detail-section {
+        flex-direction: column;
+    }  
 
-.details-section > h3 {
-    font-size: 20px;
-}  
+    .details-section > h3 {
+        font-size: 20px;
+    }  
 
-.product-images > img {
-    width: 90%;
-    height: 400px; 
-    padding: 0px;
-}
+    .product-images > img {
+        width: 90%;
+        height: 400px; 
+        padding: 0px;
+    }
 
-.size-button {
-    font-size: 22px;
-    width: 35px;
-    height: 35px;
-}
+    .size-button {
+        font-size: 22px;
+        width: 35px;
+        height: 35px;
+    }
 
 
 /*cart page*/
-.cart {
-    flex-direction: column;
-    padding: 0px;
-    margin: 30px 20px;
-}
-/*payment details*/
-.payment {
-    flex-direction: column;
-    margin: 30px 20px;
-    padding: 0px;
-}
+    .cart {
+        flex-direction: column;
+        padding: 0px;
+        margin: 30px 20px;
+    }
+    /*payment details*/
+    .payment {
+        flex-direction: column;
+        margin: 30px 20px;
+        padding: 0px;
+    }
 
-.mail-buttons > .cta-blue {
+    .mail-buttons > .cta-blue {
     font-size: 20px;
     padding: 10px 20px;
 }
 
 /*footer*/
 
-.footer-content a {
-    font-size: 12px;
-}
+    .footer-content a {
+        font-size: 12px;
+    }
 
 }
