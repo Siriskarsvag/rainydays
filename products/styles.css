@@ -6,7 +6,7 @@ body {
     header {
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 100;
     background-color: #ffffff;
     }
 
@@ -437,7 +437,6 @@ body {
     .cart {
         display: flex;
         flex-direction: row;
-        padding: 100px 30px;
         height: 600px;
     }
 
@@ -565,7 +564,6 @@ body {
     .payment {
         display: flex;
         flex-direction: row;
-        padding: 100px 30px;
         height: fit-content;
     }
 
@@ -680,7 +678,6 @@ body {
     .confirmation-section {
         display: flex;
         flex-direction: column;
-        padding: 100px 30px;
         color: #FFFFFF;
         align-items: center;
     }
@@ -693,7 +690,6 @@ body {
     .coming-soon-section {
         display: flex;
         flex-direction: column;
-        padding: 100px 30px;
         color: #FFFFFF;
         align-items: center;
     }
@@ -869,4 +865,3 @@ body {
 }
 
 }
-    
