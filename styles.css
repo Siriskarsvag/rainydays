@@ -281,8 +281,7 @@ body {
     .homepage-content {
         width: 90%;
         height: 400px;
-        background: url(images/mounir-abdi-y43wWZCvjs0-unsplash-compressed-cut.jpg) center no-repeat;
-        background-size: cover;
+        background: url(images/mounir-abdi-y43wWZCvjs0-unsplash-compressed-cut.jpg) center no-repeat cover;
         display: flex;
         flex-direction: column;
         align-items: center;
